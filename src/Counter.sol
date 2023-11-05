@@ -13,7 +13,6 @@ contract Counter {
 
     // Function to increment count by 1
     function inc() public {
-
         count += 1;
     }
 
@@ -28,8 +27,7 @@ contract Counter {
         console.log("Before increment", count);
         count += 1;
         console.log("After increment", count);
-        int newVar = -1;
+        int256 newVar = -1;
         console.logInt(newVar);
-
     }
 }
