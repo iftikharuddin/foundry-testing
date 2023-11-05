@@ -12,8 +12,17 @@ Foundry consists of:
 ## Documentation
 
 - Introduction | Testing with Foundry
-- How to Write Basic Tests | Testing with Foundry
-- ...
+- How to Write Basic Tests | Testing with Foundry 
+````
+counter app,
+test setup, 
+ok and fail,
+match-path,  --match-path your test path
+verbose and  -vvvv
+gas report - forge test --match-path PATH --gas-report
+````
+- Set Solidity Compiler Version | Testing with Foundry
+
 - ...
 - ...
 - ...

@@ -22,4 +22,16 @@ contract CounterTest is Test {
         counter.dec();
     }
 
+    // expect revert "stdError.arithmeticError"
+    function testDecUnderFlow() public {
+        vm.expectRevert();
+        counter.dec();
+    }
+
+    function testDec() public {
+        counter.inc();
+        counter.inc();
+        counter.dec();
+        assertEq(counter.count(), 1);
+    }
 }
