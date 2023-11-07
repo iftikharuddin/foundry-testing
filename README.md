@@ -21,4 +21,5 @@ gas report - forge test --match-path PATH --gas-report
 - Authentication | Testing with Foundry
 - Error | Testing with Foundry
 - Event | Testing with Foundry
+- Time | Testing with Foundry
 - ...
