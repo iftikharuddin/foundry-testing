@@ -24,10 +24,9 @@ contract ErrorTest is Test {
 
     // vm.expectRevert with param
     function testRequireMessage() public {
-        vm.expectRevert(bytes ("not authorized"));
+        vm.expectRevert(bytes("not authorized"));
         err.throwError();
     }
-
 
     // vm.expectRevert with custom error param
     function testCustomError() public {

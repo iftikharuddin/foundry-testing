@@ -58,5 +58,4 @@ contract EventTest is Test {
         // 3. Call the function that should emit the event
         e.transferMany(address(this), to, amounts);
     }
-
 }
