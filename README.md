@@ -23,4 +23,5 @@ gas report - forge test --match-path PATH --gas-report
 - Event | Testing with Foundry
 - Time | Testing with Foundry
 - Send ETH | Testing with Foundry
+- Signature | Testing with Foundry
 - ...
