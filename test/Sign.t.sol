@@ -11,20 +11,20 @@ contract SignTest is Test {
     function testSignature() public {
         uint256 privateKey = 123;
         // Computes the address for a given private key.
-        address alice = vm.addr(privateKey);
+        address ifti = vm.addr(privateKey); // get the public key
 
         // Test valid signature
-        bytes32 messageHash = keccak256("Signed by Alice");
+        bytes32 messageHash = keccak256("Signed by Iftikhar");
 
         (uint8 v, bytes32 r, bytes32 s) = vm.sign(privateKey, messageHash);
         address signer = ecrecover(messageHash, v, r, s);
 
-        assertEq(signer, alice);
+        assertEq(signer, ifti);
 
         // Test invalid message
-        bytes32 invalidHash = keccak256("Not signed by Alice");
+        bytes32 invalidHash = keccak256("Not signed by ifti");
         signer = ecrecover(invalidHash, v, r, s);
 
-        assertTrue(signer != alice);
+        assertTrue(signer != ifti);
     }
 }
