@@ -12,7 +12,7 @@ contract ForkTest is Test {
         dai = IERC20(0x6B175474E89094C44Da98b954EedeAC495271d0F);
     }
 
-    function testDeposit() public {
+    function testDaiDeposit() public {
         address alice = address(123);
 
         uint256 balBefore = dai.balanceOf(alice);
@@ -22,6 +22,7 @@ contract ForkTest is Test {
         console.log("total supply before", totalBefore / 1e18);
 
         // token, account, amount, adjust total supply
+        // deal allows you to mint any token to any addy
         deal(address(dai), alice, 1e6 * 1e18, true);
 
         uint256 balAfter = dai.balanceOf(alice);
