@@ -33,5 +33,9 @@ gas report - forge test --match-path PATH --gas-report
 - Invariant Testing - Part 2 - Handler Based Testing | Testing with Foundry
 - Invariant Testing - Part 3 - Actor Management | Testing with Foundry
 - FFI | Testing with Foundry (FFI - foreign function interface in Foundry and Solidity.)
+- Differential Test | Testing with Foundry
+- Test Vyper Contracts | Testing with Foundry
+- Deploy Smart Contract With Foundry
+- ...
 - ...
 - ...
